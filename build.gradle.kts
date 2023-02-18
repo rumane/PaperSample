@@ -25,7 +25,9 @@ java {
 }
 
 kotlin {
-//    (this as JavaToolchainSpec).languageVersion.set(JavaLanguageVersion.of(17))
+    jvmToolchain {
+        this.languageVersion.set(JavaLanguageVersion.of(17))
+    }
 }
 
 tasks {
